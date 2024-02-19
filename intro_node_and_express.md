@@ -29,28 +29,26 @@ Node.js is a runtime environment that allows you to run JavaScript code on the s
 ## Getting Started
 To get started with Node.js and Express, follow these steps:
 
-1. **Install Node.js**: Download and install Node.js from [nodejs.org](https://nodejs.org/). Follow the installation instructions provided for your operating system.
-
-2. **Create a New Project Directory**: Open your terminal or command prompt and create a new directory for your Node.js project.
+1. **Create a New Project Directory**: Open your terminal or command prompt and create a new directory for your Node.js project.
 
     ```bash
     mkdir my-express-app
     ```
 
-3. **Initialize Node.js Project**: Navigate to your project directory and run the following command to initialize a new Node.js project. This will create a `package.json` file.
+2. **Initialize Node.js Project**: Navigate to your project directory and run the following command to initialize a new Node.js project. This will create a `package.json` file.
 
     ```bash
     cd my-express-app
     npm init -y
     ```
 
-4. **Install Express.js**: Next, install Express.js as a dependency for your project using npm.
+3. **Install Express.js**: Next, install Express.js as a dependency for your project using npm.
 
     ```bash
     npm install express
     ```
 
-5. **Create an Express Server File**: Create a new file named `app.js` (or any other preferred name) in your project directory. This file will contain the code for your Express server.
+4. **Create an Express Server File**: Create a new file named `app.js` (or any other preferred name) in your project directory. This file will contain the code for your Express server.
 
     ```javascript
     const express = require('express');
@@ -66,7 +64,7 @@ To get started with Node.js and Express, follow these steps:
     });
     ```
 
-6. **Run Your Express Server**: Finally, run your Express server by executing the following command in your terminal.
+5. **Run Your Express Server**: Finally, run your Express server by executing the following command in your terminal.
 
     ```bash
     node app.js
