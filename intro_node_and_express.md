@@ -27,16 +27,54 @@ Node.js is a runtime environment that allows you to run JavaScript code on the s
 - Large ecosystem with a wide range of modules and libraries available through npm (Node Package Manager).
 
 ## Getting Started
-To get started with Node.js and Express, you'll need to:
-1. Install Node.js from [nodejs.org](https://nodejs.org/)
-2. Set up a new Node.js project by creating a directory and running `npm init`
-3. Install Express.js by running `npm install express`
-4. Write your first Express application, defining routes, middleware, and handling requests/responses
-5. Test your application locally using `node app.js` or `npm start`
-6. Deploy your application to a hosting service like Heroku or AWS for production use
+To get started with Node.js and Express, follow these steps:
+
+1. **Install Node.js**: Download and install Node.js from [nodejs.org](https://nodejs.org/). Follow the installation instructions provided for your operating system.
+
+2. **Create a New Project Directory**: Open your terminal or command prompt and create a new directory for your Node.js project.
+
+    ```bash
+    mkdir my-express-app
+    ```
+
+3. **Initialize Node.js Project**: Navigate to your project directory and run the following command to initialize a new Node.js project. This will create a `package.json` file.
+
+    ```bash
+    cd my-express-app
+    npm init -y
+    ```
+
+4. **Install Express.js**: Next, install Express.js as a dependency for your project using npm.
+
+    ```bash
+    npm install express
+    ```
+
+5. **Create an Express Server File**: Create a new file named `app.js` (or any other preferred name) in your project directory. This file will contain the code for your Express server.
+
+    ```javascript
+    const express = require('express');
+    const app = express();
+    const port = 3000;
+
+    app.get('/', (req, res) => {
+        res.send('Hello World!');
+    });
+
+    app.listen(port, () => {
+        console.log(`Server listening at http://localhost:${port}`);
+    });
+    ```
+
+6. **Run Your Express Server**: Finally, run your Express server by executing the following command in your terminal.
+
+    ```bash
+    node app.js
+    ```
+
+    Your server should now be running locally at `http://localhost:3000`. Open a web browser and navigate to this URL to see your "Hello World!" message.
 
 ## Additional Resources
-- [Node.js Official Documentation](https://nodejs.org/en/docs/)
 - [Express.js Official Documentation](https://expressjs.com/en/4x/api.html)
-- [Node.js Tutorial for Beginners by The Net Ninja](https://www.youtube.com/watch?v=UVkQ0C4qDvM) (Video)
+- [MDN Web Docs: Express Web Framework (Node.js/JavaScript)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
 - [Express.js Crash Course by Traversy Media](https://www.youtube.com/watch?v=L72fhGm1tfE) (Video)
